@@ -28,7 +28,7 @@ const Shop = () => {
 					<div className="section__content">
 						<div className="grid three">
 							{products.map((product) => (
-								<ProductCard product={product} />
+								<ProductCard key={product.id} product={product} />
 							))}
 						</div>
 					</div>
